@@ -1,0 +1,357 @@
+* ============================================
+   BASIC STYLES (From Previous Workshops)
+   ============================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 25px;
+}
+
+h3 {
+    color: #34495e;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.about-section {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #bdc3c7;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+tr:hover {
+    background-color: #d5dbdb;
+}
+
+form {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+ul, ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+hr {
+    margin-top: 40px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+footer {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* ============================================
+   WORKSHOP 3: ADVANCED CSS TECHNIQUES
+   ============================================ */
+
+.workshop-3 {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #3498db;
+}
+
+.task {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #2ecc71;
+    border-radius: 4px;
+}
+
+.task h3 {
+    color: #27ae60;
+    margin-top: 0;
+}
+
+.task p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* ============================================
+   TASK 1: CSS TRANSITIONS
+   ============================================ */
+
+.transition-button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.transition-button:hover {
+    background-color: lightcoral;
+    transform: scale(1.05);
+}
+
+.transition-button:active {
+    transform: scale(0.98);
+}
+
+/* ============================================
+   TASK 2: CSS ANIMATIONS
+   ============================================ */
+
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    position: relative;
+    animation: move 2s infinite alternate;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100px;
+    }
+}
+
+/* ============================================
+   TASK 3: CSS PSEUDO-CLASSES
+   ============================================ */
+
+.pseudo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.pseudo-list li {
+    padding: 12px;
+    margin: 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.pseudo-list li:hover {
+    background-color: #d5dbdb;
+    transform: translateX(10px);
+}
+
+.pseudo-list li:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.pseudo-list li:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+/* ============================================
+   TASK 4: CSS FILTERS
+   ============================================ */
+
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* ============================================
+   TASK 5: CSS PSEUDO-ELEMENTS
+   ============================================ */
+
+.quote {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+    color: #555;
+    line-height: 1.8;
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 60px;
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    color: #3498db;
+    opacity: 0.3;
+    font-weight: bold;
+}
+
+.quote::after {
+    content: '"';
+    font-size: 60px;
+    position: absolute;
+    right: -10px;
+    bottom: -30px;
+    color: #3498db;
+    opacity: 0.3;
+    font-weight: bold;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .animation-box {
+        width: 40px;
+        height: 40px;
+    }
+
+    @keyframes move {
+        from {
+            left: 0;
+        }
+        to {
+            left: 50px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
