@@ -1,0 +1,463 @@
+/* ===========================
+Base & Reset
+=========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f5f5f0;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ===========================
+Task 1: Semantic header + nav
+=========================== */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 32px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  border-bottom: none;
+  padding-bottom: 0;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #add8e6;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===========================
+Main content wrapper
+=========================== */
+main {
+  max-width: 860px;
+  margin: 40px auto;
+  padding: 0 24px 60px;
+}
+
+/* ===========================
+Headings
+=========================== */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  border-bottom: 3px solid #333;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 32px 0 12px;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin: 20px 0 10px;
+  color: #555;
+}
+
+/* ===========================
+Portrait image
+=========================== */
+img:not(.filter-image):not(.responsive-image) {
+  display: block;
+  max-width: 220px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+}
+
+/* ===========================
+Sections
+=========================== */
+section {
+  margin-bottom: 28px;
+}
+
+/* ===========================
+Lists
+=========================== */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 4px;
+}
+
+/* ===========================
+Links
+=========================== */
+a {
+  color: #0055aa;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #cc3300;
+}
+
+/* ===========================
+Table
+=========================== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 8px;
+}
+
+th, td {
+  border: 1px solid #bbb;
+  padding: 8px 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+tr:nth-child(even) td {
+  background-color: #f0f0f0;
+}
+
+/* ===========================
+Form
+=========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 440px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  align-self: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* ===========================
+Workshop 3 Section
+=========================== */
+.workshop-3 {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 3px solid #333;
+}
+
+/* Task 1: CSS Transitions */
+.transition-button {
+  background-color: lightblue;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.transition-button:hover {
+  background-color: lightcoral;
+}
+
+/* Task 2: CSS Animations */
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  position: relative;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}
+
+/* Task 3: CSS Pseudo-classes */
+.pseudo-list {
+  list-style: none;
+  padding-left: 0;
+  max-width: 240px;
+}
+
+.pseudo-list li {
+  padding: 6px 12px;
+}
+
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+
+/* Task 4: CSS Filters */
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  display: block;
+  max-width: 220px;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+
+/* Task 5: CSS Pseudo-elements */
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+  margin: 10px 0;
+  color: #444;
+}
+
+.quote::before {
+  content: '"';
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: lightgray;
+}
+
+/* ===========================
+Workshop 4 Section
+=========================== */
+.workshop-4 {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 3px solid #333;
+}
+
+/* Task 2: Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Task 3: Flexbox Layout */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Task 4: Media Queries */
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+
+  /* Stack grid to 1 column on small screens */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack flex boxes on small screens */
+  .flex-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
+
+/* ===========================
+Workshop 5: Responsive Design
+=========================== */
+.workshop-5 {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 3px solid #333;
+}
+
+/* Task 1: Responsive two-column layout */
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.responsive-container .column {
+  flex: 1;
+  padding: 10px;
+  background-color: #e6f2ff;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  .responsive-container .column {
+    flex: 100%;
+  }
+}
+
+/* Task 2: Responsive image */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+/* Task 3: Media query background change */
+.media-query-box {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  .media-query-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .media-query-box {
+    background-color: lightblue;
+  }
+}
+
+/* Task 4: Responsive navigation bar (Strict Version) */
+.responsive-nav {
+  margin-top: 16px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.responsive-nav .nav-list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.responsive-nav .nav-list li a {
+  text-decoration: none;
+  color: #0055aa;
+}
+
+.responsive-nav .menu-toggle {
+  display: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .responsive-nav .nav-list {
+    display: none;
+  }
+
+  .responsive-nav .menu-toggle {
+    display: block;
+  }
+}
+
+/* ===========================
+Footer
+=========================== */
+footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 24px;
+  font-size: 0.9rem;
+  margin-top: 48px;
+}

@@ -4,158 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlles Pereira Costa - Advanced CSS Workshop 3</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- FIXED CSS FILE NAME -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to My Page - Advanced CSS Edition</h1>
-        
-        <img src="images.jpg" alt="Charlles Pereira Costa - Professional portrait">
-        
-        <section class="about-section">
-            <h2>About Me</h2>
-            <p>Hello! My name is <strong>Charlles Pereira Costa</strong>. I am passionate about exploring new horizons and experiencing different cultures and cuisines around the world. I enjoy spending my time on activities that fuel my passion for adventure, travel, and creativity in the kitchen.</p>
+
+<main class="container">
+
+    <h1>Welcome to My Page - Advanced CSS Edition</h1>
+
+    <img src="images.jpg" alt="Portrait of Charlles Pereira Costa">
+
+    <section class="about-section">
+        <h2>About Me</h2>
+        <p>Hello! My name is <strong>Charlles Pereira Costa</strong>. I enjoy travelling, aviation, and cooking.</p>
+    </section>
+
+    <section>
+        <h2>My Hobbies</h2>
+
+        <ul>
+            <li>Aviation</li>
+            <li>Travelling</li>
+            <li>Cooking</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Useful Links</h2>
+        <ul>
+            <li><a href="https://www.laurea.fi" target="_blank" rel="noopener">Laurea</a></li>
+            <li><a href="https://www.airliners.net" target="_blank" rel="noopener">Aviation</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>My Courses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>Web Dev</td>
+                    <td>In Progress</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- WORKSHOP 3 TASKS -->
+    <section class="workshop-3">
+        <h2>Advanced CSS Techniques</h2>
+
+        <!-- Task 1 -->
+        <section>
+            <h3>CSS Transitions</h3>
+            <p>Hover over the button:</p>
+            <button class="transition-button">Hover me</button>
         </section>
 
+        <!-- Task 2 -->
         <section>
-            <h2>My Hobbies</h2>
-            
-            <h3>Things I Love</h3>
-            <ul>
-                <li>Aviation - Exploring aircraft and aviation technology</li>
-                <li>Travelling - Discovering new places and cultures</li>
-                <li>Cooking - Creating delicious meals and experimenting with recipes</li>
+            <h3>CSS Animations</h3>
+            <div class="animation-box"></div>
+        </section>
+
+        <!-- Task 3 -->
+        <section>
+            <h3>Pseudo-classes</h3>
+            <ul class="pseudo-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
             </ul>
-            
-            <h3>My Typical Day Activities</h3>
-            <ol>
-                <li>Start the day with a well-planned breakfast</li>
-                <li>Engage in learning and development activities</li>
-                <li>Pursue hobbies and personal interests</li>
-                <li>Reflect and plan for tomorrow</li>
-            </ol>
         </section>
 
+        <!-- Task 4 -->
         <section>
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="https://www.laurea.fi" target="_blank" rel="noopener">Visit Laurea University</a></li>
-                <li><a href="https://www.airliners.net" target="_blank" rel="noopener">Learn About Aviation Industry</a></li>
-                <li><a href="https://maps.google.com" target="_blank" rel="noopener">Explore Places on Google Maps</a></li>
-            </ul>
+            <h3>CSS Filters</h3>
+            <img src="images.jpg" alt="Sample image with filter" class="filter-image">
         </section>
 
+        <!-- Task 5 -->
         <section>
-            <h2>My Academic Courses</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Course Name</th>
-                        <th>Status</th>
-                        <th>Interest Level</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Introduction to HTML</td>
-                        <td>In Progress</td>
-                        <td>High</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development Fundamentals</td>
-                        <td>In Progress</td>
-                        <td>High</td>
-                    </tr>
-                    <tr>
-                        <td>Professional Communication</td>
-                        <td>Completed</td>
-                        <td>Medium</td>
-                    </tr>
-                    <tr>
-                        <td>Digital Literacy</td>
-                        <td>In Progress</td>
-                        <td>High</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Pseudo-elements</h3>
+            <blockquote class="quote">
+                This is a sample quote.
+            </blockquote>
         </section>
+    </section>
 
-        <section>
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
+    <footer>
+        <p>Charlles Pereira Costa | Workshop 3 Laurea AMK 2026</p>
+    </footer>
 
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
+</main>
 
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
-        </section>
-
-        <!-- Workshop 3: Advanced CSS Tasks -->
-        <section class="workshop-3">
-            <h2>Workshop 3: Advanced CSS Techniques</h2>
-
-            <!-- Task 1: CSS Transitions -->
-            <section class="task">
-                <h3>Task 1: CSS Transitions</h3>
-                <p>Click the button below and hover over it to see a smooth color transition:</p>
-                <button class="transition-button">Hover me</button>
-            </section>
-
-            <!-- Task 2: CSS Animations -->
-            <section class="task">
-                <h3>Task 2: CSS Animations</h3>
-                <p>Watch the box move from left to right continuously:</p>
-                <div class="animation-box"></div>
-            </section>
-
-            <!-- Task 3: CSS Pseudo-classes -->
-            <section class="task">
-                <h3>Task 3: CSS Pseudo-classes</h3>
-                <p>Notice how every other list item has a different background color:</p>
-                <ul class="pseudo-list">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </section>
-
-            <!-- Task 4: CSS Filters -->
-            <section class="task">
-                <h3>Task 4: CSS Filters</h3>
-                <p>Hover over the image to remove the grayscale filter:</p>
-                <img src="images.jpg" alt="Sample Image demonstrating CSS filter" class="filter-image">
-            </section>
-
-            <!-- Task 5: CSS Pseudo-elements -->
-            <section class="task">
-                <h3>Task 5: CSS Pseudo-elements</h3>
-                <p>A blockquote with a decorative quote mark:</p>
-                <blockquote class="quote">
-                    This is a sample quote demonstrating CSS pseudo-elements with decorative styling.
-                </blockquote>
-            </section>
-        </section>
-
-        <hr>
-        <footer>
-           <p>Charlles Pereira Costa | Laurea AMK Spring 2026 <br>
-        </p>
-        </footer>
-    </div>
 </body>
 </html>

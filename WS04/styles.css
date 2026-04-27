@@ -14,7 +14,51 @@ body {
   line-height: 1.7;
 }
 
-.container {
+/* ===========================
+   Task 1: Semantic header + nav
+   =========================== */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 32px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  border-bottom: none;
+  padding-bottom: 0;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #add8e6;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===========================
+   Main content wrapper
+   =========================== */
+main {
   max-width: 860px;
   margin: 40px auto;
   padding: 0 24px 60px;
@@ -43,13 +87,13 @@ h3 {
 }
 
 /* ===========================
-   Image (portrait)
+   Portrait image
    =========================== */
 img:not(.filter-image) {
   display: block;
   max-width: 220px;
   border-radius: 6px;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
 }
 
@@ -150,7 +194,7 @@ input[type="submit"]:hover {
 }
 
 /* ===========================
-   Workshop 3 Section Wrapper
+   Workshop 3 Section
    =========================== */
 .workshop-3 {
   margin-top: 48px;
@@ -158,9 +202,7 @@ input[type="submit"]:hover {
   border-top: 3px solid #333;
 }
 
-/* ===========================
-   Task 1: CSS Transitions
-   =========================== */
+/* Task 1: CSS Transitions */
 .transition-button {
   background-color: lightblue;
   padding: 10px 20px;
@@ -175,9 +217,7 @@ input[type="submit"]:hover {
   background-color: lightcoral;
 }
 
-/* ===========================
-   Task 2: CSS Animations
-   =========================== */
+/* Task 2: CSS Animations */
 .animation-box {
   width: 50px;
   height: 50px;
@@ -195,17 +235,7 @@ input[type="submit"]:hover {
   }
 }
 
-/* ===========================
-   Task 3: CSS Pseudo-classes
-   =========================== */
-.pseudo-list li:nth-child(odd) {
-  background-color: lightgray;
-}
-
-.pseudo-list li:nth-child(even) {
-  background-color: white;
-}
-
+/* Task 3: CSS Pseudo-classes */
 .pseudo-list {
   list-style: none;
   padding-left: 0;
@@ -216,9 +246,15 @@ input[type="submit"]:hover {
   padding: 6px 12px;
 }
 
-/* ===========================
-   Task 4: CSS Filters
-   =========================== */
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+
+/* Task 4: CSS Filters */
 .filter-image {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
@@ -232,9 +268,7 @@ input[type="submit"]:hover {
   filter: grayscale(0%);
 }
 
-/* ===========================
-   Task 5: CSS Pseudo-elements
-   =========================== */
+/* Task 5: CSS Pseudo-elements */
 .quote {
   position: relative;
   padding-left: 20px;
@@ -253,13 +287,82 @@ input[type="submit"]:hover {
 }
 
 /* ===========================
+   Workshop 4 Section
+   =========================== */
+.workshop-4 {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 3px solid #333;
+}
+
+/* Task 2: Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Task 3: Flexbox Layout */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Task 4: Media Queries */
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+
+  /* Stack grid to 1 column on small screens */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack flex boxes on small screens */
+  .flex-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
+
+/* ===========================
    Footer
    =========================== */
 footer {
-  margin-top: 48px;
-  padding-top: 16px;
-  border-top: 1px solid #bbb;
-  font-size: 0.9rem;
-  color: #666;
+  background-color: #222;
+  color: #aaa;
   text-align: center;
+  padding: 20px 24px;
+  font-size: 0.9rem;
+  margin-top: 48px;
 }

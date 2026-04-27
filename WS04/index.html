@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop 4 - Page Layout Techniques</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- HEADER WITH NAVIGATION -->
     <header>
         <h1>My Website</h1>
         <nav>
             <ul class="nav-list">
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Grid</a></li>
+                <li><a href="#grid">Grid</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main>
+
+        <!-- ABOUT SECTION -->
         <section id="about" class="content-section">
             <h2>About Me</h2>
-            <img src="images.jpg" alt="Portrait photo">
-            <p>Hello! My name is Charlles Pereira Costa. I enjoy learning web development, exploring aviation, travelling, and cooking. This page was created as part of Workshop 4 on page layout techniques.</p>
+            <img src="images.jpg" alt="Portrait of Charlles Pereira Costa">
+            <p>
+                Hello! My name is Charlles Pereira Costa. I enjoy learning web development,
+                exploring aviation, travelling, and cooking.
+            </p>
         </section>
 
-        <section id="services" class="content-section">
+        <!-- GRID SECTION -->
+        <section id="grid" class="content-section">
             <h2>Grid Layout</h2>
             <p>This section shows a simple grid with two rows and three columns.</p>
+
             <div class="grid-container">
                 <div class="grid-item">1</div>
                 <div class="grid-item">2</div>
@@ -38,9 +48,11 @@
             </div>
         </section>
 
+        <!-- FLEXBOX SECTION -->
         <section class="content-section">
             <h2>Flexbox Layout</h2>
-            <p>This section shows three boxes aligned horizontally using flexbox.</p>
+            <p>This section shows three boxes aligned horizontally.</p>
+
             <div class="flex-container">
                 <div class="box">Box 1</div>
                 <div class="box">Box 2</div>
@@ -48,14 +60,20 @@
             </div>
         </section>
 
+        <!-- MEDIA QUERY SECTION -->
         <section class="content-section">
             <h2>Responsive Box</h2>
-            <p>This box changes color based on the screen width.</p>
-            <div class="responsive-box">Resize the window to see the effect</div>
+            <p>This box changes color based on screen width.</p>
+
+            <div class="responsive-box">
+                Resize the window to see the effect
+            </div>
         </section>
 
+        <!-- CONTACT SECTION -->
         <section id="contact" class="content-section">
             <h2>Contact</h2>
+
             <form action="#" method="post">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -69,10 +87,13 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>Charlles Pereira Costa Laurea AMK Spring 2026</p>
+        <p>© 2026 Charlles Pereira Costa | Workshop 4 Laurea AMK</p>
     </footer>
+
 </body>
 </html>
