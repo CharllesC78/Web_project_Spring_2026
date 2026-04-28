@@ -1,0 +1,110 @@
+/* Custom styles for Bootstrap Workshop 6 */
+
+/* General body styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Smooth scrolling for navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Grid box styling for Task 2 */
+.grid-box {
+    background-color: #0d6efd;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section headings */
+section h2 {
+    color: #212529;
+    border-bottom: 3px solid #0d6efd;
+    padding-bottom: 10px;
+}
+
+/* About section styling */
+.about-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Contact section styling */
+.contact-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-content p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact-content strong {
+    color: #0d6efd;
+}
+
+/* Practice area styling */
+.practice-area {
+    border: 2px dashed #dee2e6;
+    padding: 30px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Add spacing between buttons */
+.btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    border-top: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-box {
+        margin-bottom: 15px;
+    }
+
+    section {
+        padding: 0 15px;
+    }
+
+    .about-content p,
+    .contact-content p {
+        font-size: 1rem;
+    }
+}
