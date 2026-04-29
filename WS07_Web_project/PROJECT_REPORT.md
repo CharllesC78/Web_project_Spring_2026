@@ -1,4 +1,4 @@
-# Project Report — Charlles Hub
+# Project Report — Charlles Webpage Project
 
 **Author:** Charlles Pereira Costa
 **Course project:** Static personal website using HTML &amp; CSS
@@ -8,7 +8,7 @@
 
 ## 1. Project idea and purpose
 
-**Charlles Hub** is a small, personal four-page website built with pure HTML5 and CSS3 — no frameworks, no JavaScript, no build step. It is a hand-made corner of the web that introduces who I am, what I do professionally in IT, and the four "threads" I keep returning to outside of work: space, gadgets, travel, and cooking.
+**Charlles Webpage Project** is a small, personal four-page website built with pure HTML5 and CSS3 — no frameworks, no JavaScript, no build step. It is a hand-made corner of the web that introduces who I am, what I do professionally in IT, and the four "threads" I keep returning to outside of work: space, gadgets, travel, and cooking.
 
 The purpose of the project is two-fold:
 

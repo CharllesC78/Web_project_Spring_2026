@@ -1,4 +1,4 @@
-# Charlles Hub
+# Charlles Webpage Project
 
 A small, four-page personal website built with **pure HTML5 and CSS3** — no JavaScript, no frameworks, no build step.
 
@@ -7,7 +7,7 @@ A small, four-page personal website built with **pure HTML5 and CSS3** — no Ja
 - `index.html` — homepage
 - `about.html` — biography, skills, career goals
 - `interests.html` — long-form notes on space, gadgets, travel, and cooking
-- `contact.html` — email, LinkedIn, static contact form
+- `contact.html` — email, LinkedIn, deviantArt, static contact form
 - `styles.css` — shared styles for every page
 - `PROJECT_REPORT.md` — course project report (Task 4)
 
