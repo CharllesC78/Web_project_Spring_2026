@@ -3,56 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlles Hub</title>
+    <meta name="description" content="Charlles Webpage Project — a personal site by Charlles Pereira Costa. IT professional exploring cybersecurity, cloud, space, gadgets, travel and cooking.">
+    <meta name="author" content="Charlles Pereira Costa">
+    <title>Charlles Webpage Project — Notes from an IT mind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,30..100;1,9..144,400..600,30..100&amp;family=JetBrains+Mono:wght@400;500&amp;family=Outfit:wght@300;400;500;600&amp;display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Charlles Hub</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<header class="topbar">
+    <div class="container topbar-inner">
+        <a class="brand" href="index.html">
+            <span class="brand-dot" aria-hidden="true"></span>
+            Charlles<em>·</em>Webpage Project
+        </a>
+        <img src="images/Me.jpg" alt="Charlles' picture" style="position: absolute; left: 50%; transform: translateX(-50%); top: 1.1rem; width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="index.html" class="is-active">Home</a>
+            <a href="about.html">About</a>
+            <a href="interests.html">Interests</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section class="hero">
-    <h2>Welcome to My World</h2>
-    <p>Exploring Technology, Space, Travel & Creativity</p>
-</section>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <span class="eyebrow reveal reveal-1">Personal site · est. 2026</span>
+                    <h1 class="reveal reveal-2">
+                        Notes from an<br>
+                        <span class="strike">IT mind</span> wandering through<br>
+                        <span class="accent">space, code &amp; kitchens.</span>
+                    </h1>
+                    <p class="hero-lede reveal reveal-3">
+                        I'm Charlles — an IT professional based between systems and stars.
+                        This is my quiet corner of the web for the things I care about: networks
+                        that work, clouds that scale, recipes worth repeating, and the next
+                        great human voyage off-planet.
+                    </p>
+                    <a class="hero-cta reveal reveal-3" href="about.html">
+                        Read my story <span class="hero-cta-arrow" aria-hidden="true">→</span>
+                    </a>
+                    <dl class="hero-meta reveal reveal-4">
+                        <div>
+                            <dt>Role</dt>
+                            <dd>IT &amp; Cloud</dd>
+                        </div>
+                        <div>
+                            <dt>Focus</dt>
+                            <dd>Cybersecurity</dd>
+                        </div>
+                        <div>
+                            <dt>Stack</dt>
+                            <dd>Azure · ServiceNow · Jira</dd>
+                        </div>
+                        <div>
+                            <dt>Currently</dt>
+                            <dd>Learning &amp; building</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="cards">
-    <div class="card">
-        <img src="images/space.jpg" alt="Space">
-        <h3>Space</h3>
-        <p>Passionate about space exploration and future technologies.</p>
-    </div>
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Four threads</span>
+                <h2>The things I keep coming back to.</h2>
+                <p>A mixed bag of obsessions — half technical, half tactile.
+                    Tap any card to read more on the interests page.</p>
+            </div>
 
-    <div class="card">
-        <img src="images/gadgets.jpg" alt="Gadgets">
-        <h3>Gadgets</h3>
-        <p>Interested in modern tech, IT systems, and innovation.</p>
-    </div>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-figure">
+                        <img src="images/space.jpg"
+                             alt="Space exploration image">
+                        <span class="card-tag">01 · Cosmos</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Space &amp; the long now</h3>
+                        <p>From Voyager's Pale Blue Dot to Artemis and Starship — I track what
+                            humans are sending past the atmosphere and why it matters down here.</p>
+                        <a class="card-link" href="interests.html#space">Explore the cosmos thread</a>
+                    </div>
+                </article>
 
-    <div class="card">
-        <img src="images/travel.jpg" alt="Travel">
-        <h3>Travel</h3>
-        <p>Exploring cultures and new places around the world.</p>
-    </div>
+                <article class="card">
+                    <div class="card-figure">
+                        <img src="images/gadgets.jpg"
+                             alt="Gadgets and technology image">
+                        <span class="card-tag">02 · Tech</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Gadgets &amp; quiet engineering</h3>
+                        <p>The right tool, well used. I'm interested in how everyday devices
+                            actually work — and how the boring infrastructure behind them holds up.</p>
+                        <a class="card-link" href="interests.html#gadgets">See the gear log</a>
+                    </div>
+                </article>
 
-    <div class="card">
-        <img src="images/cooking.jpg" alt="Cooking">
-        <h3>Cooking</h3>
-        <p>Enjoy creating meals and experimenting with flavors.</p>
-    </div>
-</section>
+                <article class="card">
+                    <div class="card-figure">
+                        <img src="images/relax.jpg"
+                             alt="Relax image">
+                        <span class="card-tag">03 · Travel</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Travel as a refresh</h3>
+                        <p>New cities, new neighbourhoods, a working SIM card and a notebook —
+                            travel keeps my perspective from getting stale.</p>
+                        <a class="card-link" href="interests.html#travel">Wander the route</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-figure">
+                        <img src="images/cooking.jpg"
+                             alt="Cooking image">
+                        <span class="card-tag">04 · Kitchen</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Cooking, slowly</h3>
+                        <p>Food as a small daily ritual — Brazilian food, weeknight pastas,
+                            and the occasional ambitious Sunday project.</p>
+                        <a class="card-link" href="interests.html#cooking">Open the kitchen</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">What's here</span>
+                <h2>Three short paths through the site.</h2>
+            </div>
+            <div class="cards" style="grid-template-columns: 1fr;">
+                <article class="card" style="grid-column: span 6;">
+                    <div class="card-body" style="padding: 2rem;">
+                        <h3>About — the short version</h3>
+                        <p>Who I am, what I work on, the skills I'm sharpening, and where I'm
+                            heading next in cybersecurity and cloud.</p>
+                        <a class="card-link" href="about.html">Read the about page</a>
+                    </div>
+                </article>
+                <article class="card" style="grid-column: span 3;">
+                    <div class="card-body" style="padding: 2rem;">
+                        <h3>Interests — the long version</h3>
+                        <p>One page, four threads, written like field notes.</p>
+                        <a class="card-link" href="interests.html">Open interests</a>
+                    </div>
+                </article>
+                <article class="card" style="grid-column: span 3;">
+                    <div class="card-body" style="padding: 2rem;">
+                        <h3>Contact — say hi</h3>
+                        <p>Email, LinkedIn, or a short note via the form. I read everything.</p>
+                        <a class="card-link" href="contact.html">Get in touch</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>Charlles Pereira Costa Laurea AMK Spring 2026</p>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-brand">Charlles<em> · </em>Webpage Project</p>
+                <p class="footer-meta" style="margin-top: 0.75rem;">
+                    A small, hand-written corner of the web.<br>
+                    Built with HTML &amp; CSS, no frameworks.
+                </p>
+            </div>
+            <nav class="footer-links" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="footer-meta">
+                Charlles Pereira Costa.<br>
+                All thoughts are from my own. <br>
+                Last updated: May 2026.
+            </p>
+        </div>
+    </div>
 </footer>
 
 </body>

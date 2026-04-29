@@ -3,39 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Interests</title>
+    <meta name="description" content="Charlles' four favourite threads: space, gadgets, travel and cooking — written as field notes.">
+    <meta name="author" content="Charlles Pereira Costa">
+    <title>Interests — Charlles Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,30..100;1,9..144,400..600,30..100&amp;family=JetBrains+Mono:wght@400;500&amp;family=Outfit:wght@300;400;500;600&amp;display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>My Interests</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<header class="topbar">
+    <div class="container topbar-inner">
+        <a class="brand" href="index.html">
+            <span class="brand-dot" aria-hidden="true"></span>
+            Charlles<em>·</em>Hub
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="interests.html" class="is-active">Interests</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section class="content">
-    <h2>Space 🚀</h2>
-    <p>I enjoy learning about space missions, planets, and the future of humanity beyond Earth.</p>
+<main>
+    <section class="hero" style="padding-bottom: 1rem;">
+        <div class="container">
+            <span class="eyebrow reveal reveal-1">Field notes</span>
+            <h1 class="reveal reveal-2">
+                Four threads that<br>
+                <span class="accent">keep my brain on.</span>
+            </h1>
+            <p class="hero-lede reveal reveal-3">
+                Some are technical, some are tactile, all of them get a little better the
+                more time I spend with them. Here's the long version.
+            </p>
+        </div>
+    </section>
 
-    <h2>Gadgets 💻</h2>
-    <p>I like exploring new devices, smart technology, and IT innovations.</p>
+    <section class="article" aria-label="Interests">
+        <div class="container">
+            <h2 class="visually-hidden">All interests</h2>
+            <article class="interest-block" id="space">
+                <p class="interest-num">01 · Cosmos</p>
+                <div>
+                    <h2 class="interest-title">Space &amp; the <em>long now</em>.</h2>
+                    <div class="interest-tags">
+                        <span>Astronomy</span>
+                        <span>Spaceflight</span>
+                        <span>Astrophysics</span>
+                    </div>
+                </div>
+                <div class="interest-body">
+                    <p>I think space is the closest thing we have to a free perspective
+                        upgrade. A single photograph of Earth from low orbit is enough to
+                        recalibrate a bad week.</p>
+                    <p>I follow space missions the way some people follow football — Artemis,
+                        the JWST archive, the slow drumbeat of private launches. The technical
+                        details are fascinating, but the part I love most is the long-term
+                        thinking required to even consider going.</p>
+                </div>
+            </article>
 
-    <h2>Travel 🌍</h2>
-    <p>Traveling allows me to experience different cultures and perspectives.</p>
+            <article class="interest-block" id="gadgets">
+                <p class="interest-num">02 · Tech</p>
+                <div>
+                    <h2 class="interest-title">Gadgets &amp; <em>quiet engineering</em>.</h2>
+                    <div class="interest-tags">
+                        <span>Hardware</span>
+                        <span>Home lab</span>
+                        <span>Daily drivers</span>
+                    </div>
+                </div>
+                <div class="interest-body">
+                    <p>I'm into gadgets the way someone might be into kitchen knives — fewer,
+                        better, and used a lot. A well-made keyboard, a router that doesn't
+                        crash, a NAS that just works for years. That kind of thing.</p>
+                    <p>It overlaps neatly with my day job: most of the gear I get excited
+                        about is also something I can learn from professionally. Tinkering
+                        with a home lab is, conveniently, how a lot of cloud and security
+                        skills get built.</p>
+                </div>
+            </article>
 
-    <h2>Cooking 🍳</h2>
-    <p>Cooking is a creative hobby where I experiment with recipes and flavors.</p>
-</section>
+            <article class="interest-block" id="travel">
+                <p class="interest-num">03 · Travel</p>
+                <div>
+                    <h2 class="interest-title">Travel as a <em>refresh button</em>.</h2>
+                    <div class="interest-tags">
+                        <span>Slow travel</span>
+                        <span>City walks</span>
+                        <span>Food first</span>
+                    </div>
+                </div>
+                <div class="interest-body">
+                    <p>I don't travel to escape — I travel to interrupt. Different streets,
+                        different dinners, different commutes. A week somewhere new is usually
+                        enough to rearrange the way I think about a problem at home.</p>
+                    <p>My favourite trips are the ones with no big itinerary: a base, a few
+                        recommended places, and a lot of walking. Coffee, markets, public
+                        transit, repeat.</p>
+                </div>
+            </article>
+
+            <article class="interest-block" id="cooking">
+                <p class="interest-num">04 · Kitchen</p>
+                <div>
+                    <h2 class="interest-title">Cooking, <em>slowly</em>.</h2>
+                    <div class="interest-tags">
+                        <span>Brazilian classics</span>
+                        <span>Weeknight pasta</span>
+                        <span>Sunday projects</span>
+                    </div>
+                </div>
+                <div class="interest-body">
+                    <p>Cooking is my analogue counterweight to a screen-heavy job. Heat,
+                        water, salt, time — the same four ingredients that have run the human
+                        kitchen for millennia.</p>
+                    <p>On weekdays I'm pragmatic: a sharp knife, one pan, dinner in twenty
+                        minutes. On weekends I get ambitious — slow braises, fresh pasta from
+                        scratch, the kind of stew that needs three hours and rewards
+                        patience.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>Charlles Pereira Costa Laurea AMK Spring 2026</p>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-brand">Charlles<em> · </em>Hub</p>
+                <p class="footer-meta" style="margin-top: 0.75rem;">
+                    A small, hand-written corner of the web.<br>
+                    Built with HTML &amp; CSS, no frameworks.
+                </p>
+            </div>
+            <nav class="footer-links" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="footer-meta">
+                © 2026 Charlles Pereira Costa.<br>
+                All thoughts my own.<br>
+                Last updated: January 2026.
+            </p>
+        </div>
+    </div>
 </footer>
 
 </body>

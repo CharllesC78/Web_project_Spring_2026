@@ -3,31 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <meta name="description" content="Get in touch with Charlles — email, LinkedIn, or a short note.">
+    <meta name="author" content="Charlles Pereira Costa">
+    <title>Contact — Charlles Webpage Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,30..100;1,9..144,400..600,30..100&amp;family=JetBrains+Mono:wght@400;500&amp;family=Outfit:wght@300;400;500;600&amp;display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>Contact Me</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<header class="topbar">
+    <div class="container topbar-inner">
+        <a class="brand" href="index.html">
+            <span class="brand-dot" aria-hidden="true"></span>
+            Charlles<em>·</em>Webpage Project
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="interests.html">Interests</a>
+            <a href="contact.html" class="is-active">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section class="content">
-    <h2>Get in Touch</h2>
-    <p>Email: <a href="mailto:charlles.pereiracosta@gmail.com">charlles.pereiracosta@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/charlles-pereira-costa-834232114/" target="_blank">https://www.linkedin.com/in/charlles-pereira-costa-834232114/</a></p>
-</section>
+<main>
+    <section class="hero" style="padding-bottom: 1rem;">
+        <div class="container">
+            <span class="eyebrow reveal reveal-1">Open inbox</span>
+            <h1 class="reveal reveal-2">
+                Say hello.<br>
+                <span class="accent">I read every message.</span>
+            </h1>
+            <p class="hero-lede reveal reveal-3">
+                Whether it's a question about IT, a kitchen recommendation, or a project
+                idea — pick the channel that suits you. I usually reply within a couple of
+                days.
+            </p>
+        </div>
+    </section>
+
+    <section class="article">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <p class="label">Email · primary</p>
+                    <a href="mailto:charlles.pereiracosta@gmail.com">charlles.pereiracosta@gmail.com</a>
+                    <p style="margin-top: 1rem; color: var(--ink-soft); font-size: 0.95rem;">
+                        Best for anything longer than a sentence — work questions, ideas,
+                        polite arguments about Python vs. PowerShell.
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <p class="label">LinkedIn · professional</p>
+                    <a href="https://www.linkedin.com/in/charlles-pereira-costa-834232114/" target="_blank" rel="noopener noreferrer">
+                        linkedin.com/in/charlles-pereira-costa
+                    </a>
+                    <p style="margin-top: 1rem; color: var(--ink-soft); font-size: 0.95rem;">
+                        Connect for IT, cloud, or cybersecurity conversations and roles.
+                        Personal notes welcome with the request.
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <p class="label">DeviantArt · creative</p>
+                    <a href="https://www.deviantart.com/flycharlles" target="_blank" rel="noopener noreferrer">
+                        deviantart.com/flycharlles
+                    </a>
+                    <p style="margin-top: 1rem; color: var(--ink-soft); font-size: 0.95rem;">
+                        Art, design, and creative projects. A gallery of visual explorations
+                        and personal creative work.
+                    </p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <span class="eyebrow">Or — drop a quick note</span>
+                <h2 style="margin-top: 0.6rem;">A small form, in case email feels heavy.</h2>
+                <p style="color: var(--ink-soft); margin-top: 0.6rem;">
+                    This is a static demo form for the course project — submissions are not
+                    sent anywhere yet, but the layout is ready for a backend to be hooked up
+                    later.
+                </p>
+
+                <form class="contact-form" action="#" method="post" novalidate>
+                    <div>
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Ada Lovelace" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@somewhere.com" autocomplete="email">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="What's on your mind?"></textarea>
+                    </div>
+                    <button type="submit">Send note →</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>Charlles Pereira Costa Laurea AMK Spring 2026</p>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-brand">Charlles<em> · </em>Webpage Project </p>
+                <p class="footer-meta" style="margin-top: 0.75rem;">
+                    A small, hand-written corner of the web.<br>
+                    Built with HTML &amp; CSS, no frameworks.
+                </p>
+            </div>
+            <nav class="footer-links" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="footer-meta">
+                Charlles Pereira Costa.<br>
+                All thoughts are from my own mind.<br>
+                Last updated: May 2026.
+            </p>
+        </div>
+    </div>
 </footer>
 
 </body>

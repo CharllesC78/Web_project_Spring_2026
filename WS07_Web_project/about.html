@@ -3,45 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <meta name="description" content="About Charlles Pereira Costa — IT professional with focus on networking, cybersecurity and cloud technologies.">
+    <meta name="author" content="Charlles Pereira Costa">
+    <title>About — Charlles Webpage Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,30..100;1,9..144,400..600,30..100&amp;family=JetBrains+Mono:wght@400;500&amp;family=Outfit:wght@300;400;500;600&amp;display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <h1>About Me</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<header class="topbar">
+    <div class="container topbar-inner">
+        <a class="brand" href="index.html">
+            <span class="brand-dot" aria-hidden="true"></span>
+            Charlles<em>·</em>Webpage Project
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="is-active">About</a>
+            <a href="interests.html">Interests</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section class="content">
-    <h2>Who I Am</h2>
-    <p>I am an IT-focused professional with interests in networking, cybersecurity, and cloud technologies.</p>
-    
-    
-    <img src="images/short.jpg" alt="My Picture" style="max-width: 300px; height: auto; border-radius: 10px; margin: 20px 0;">
-    <img src="relax.jpg" alt="Relaxing Image" style="max-width: 300px; height: auto; border-radius: 10px; margin: 20px 0;">
-    
-    <h2>Skills</h2>
-    <ul>
-        <li>IT Support & Troubleshooting</li>
-        <li>Cloud Technologies (Microsoft Azure basics)</li>
-        <li>ServiceNow & Jira</li>
-        <li>Networking Fundamentals</li>
-    </ul>
+<main>
+    <section class="hero" style="padding-bottom: 1rem;">
+        <div class="container">
+            <span class="eyebrow reveal reveal-1">Chapter one</span>
+            <h1 class="reveal reveal-2">
+                A short biography,<br>
+                written by <span class="accent">the subject.</span>
+            </h1>
+            <p class="hero-lede reveal reveal-3">
+            I work in IT, I'm pulled toward cybersecurity and cloud, and I
+                spend my off-hours reading about rockets or rearranging a mise en place.
+            </p>
+        </div>
+    </section>
 
-    <h2>Career Goals</h2>
-    <p>I aim to grow in cybersecurity and cloud infrastructure while continuously learning new technologies.</p>
-</section>
+    <section class="article">
+        <div class="container">
+            <div class="article-grid">
+                <aside class="article-aside">
+                    <figure class="portrait" aria-hidden="true">
+                        <img src="images/Me.jpg" alt="Portrait of Charlles Pereira Costa" style="width: 100%; height: auto; border-radius: 8px;">
+                    </figure>
+
+                    <dl class="fact-list">
+                        <dt>Based in</dt>
+                        <dd>The cloud (Brazil/Finland)</dd>
+                        <dt>Working on</dt>
+                        <dd>Cybersecurity &amp; Azure</dd>
+                        <dt>Toolbelt</dt>
+                        <dd>ServiceNow, Linux, CLI</dd>
+                        <dt>Currently reading</dt>
+                        <dd>Anything on zero-trust</dd>
+                    </dl>
+                </aside>
+
+                <div class="article-body">
+                    <h2>Who I am</h2>
+                    <p>I'm an IT-focused professional whose curiosity refuses to stay inside a
+                        single ticket queue. Most of my days are spent close to networks,
+                        endpoints and the sort of small, careful problem-solving that keeps
+                        organisations actually able to work. The rest of my hours go into the
+                        slower, deeper end of the field — cybersecurity, cloud architecture,
+                        and the systems that connect them.</p>
+                    <p>I came into this work the long way around: a lot of self-teaching, a
+                        lot of breaking things in lab environments, and a healthy respect for
+                        people who write good documentation. I still believe the most valuable
+                        skill in IT is reading carefully before clicking quickly.</p>
+
+                    <p class="pullquote">
+                        "Good IT is invisible. The work shows up as everyone else's quiet,
+                        productive day."
+                    </p>
+
+                    <h2>What I work on</h2>
+                    <p>The day-to-day looks like a mix of operations and design — supporting
+                        users, hardening systems, automating the parts that beg to be
+                        automated, and learning a new corner of Microsoft Azure each week. I
+                        prefer fixes that hold up at 3 a.m. over fixes that win demos.</p>
+
+                    <h2>Skills, currently sharpening</h2>
+                    <ul class="skill-grid">
+                        <li>
+                            <span class="skill-num">01</span>
+                            <span>
+                                <strong>IT support &amp; troubleshooting</strong>
+                                <small>Triage, root-cause analysis, end-to-end resolution.</small>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-num">02</span>
+                            <span>
+                                <strong>Cloud — Microsoft Azure</strong>
+                                <small>Identity, basic infra, networking primitives.</small>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-num">03</span>
+                            <span>
+                                <strong>ServiceNow &amp; Linux server administration</strong>
+                                <small>Workflow design, incident hygiene, clean handoffs.</small>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-num">04</span>
+                            <span>
+                                <strong>Networking fundamentals</strong>
+                                <small>OSI layers, fiber optics, switches, the hard stuff at the edges.</small>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-num">05</span>
+                            <span>
+                                <strong>Cybersecurity basics</strong>
+                                <small>Threat models, hardening, the human side of security.</small>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-num">06</span>
+                            <span>
+                                <strong>Documentation</strong>
+                                <small>Writing the runbook the next person will actually use.</small>
+                            </span>
+                        </li>
+                    </ul>
+
+                    <h2>Where I'm heading</h2>
+                    <p>The next chapter is squarely in cybersecurity and cloud infrastructure
+                        — two fields that keep getting more interesting the deeper you go. I
+                        want to spend the next year getting comfortable with identity, network
+                        defence, and the practical realities of running secure systems at
+                        scale.</p>
+                    <p>If any of that overlaps with what you're working on,
+                        <a href="contact.html">say hello</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>Charlles Pereira Costa Laurea AMK Spring 2026</p>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-brand">Charlles<em> · </em>Webpage Project</p>
+                <p class="footer-meta" style="margin-top: 0.75rem;">
+                    A small, hand-written corner of the web.<br>
+                    Built with HTML &amp; CSS, no frameworks.
+                </p>
+            </div>
+            <nav class="footer-links" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="footer-meta">
+                Charlles Pereira Costa.<br>
+                All thoughts are from my own.<br>
+                Last updated: May 2026.
+            </p>
+        </div>
+    </div>
 </footer>
 
 </body>
