@@ -1,156 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Workshop - Advanced CSS & Responsive Design</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 5 — Responsive Design · Charlles Pereira Costa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Page - Advanced CSS Edition</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#workshop3">Workshop 3</a></li>
-        <li><a href="#workshop4">Workshop 4</a></li>
-        <li><a href="#workshop5">Workshop 5</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
+<header>
+    <h1>Charlles Pereira Costa — Workshops</h1>
+    <nav aria-label="Primary">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#workshop3">Workshop 3</a></li>
+            <li><a href="#workshop4">Workshop 4</a></li>
+            <li><a href="#workshop5">Workshop 5</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
     <section id="about">
-      <h2>About Me</h2>
-      <img src="Me.jpg" alt="Portrait of Charlles">
-      <p>Hello! My name is <strong>Charlles Pereira Costa</strong>. I enjoy travelling, aviation, and cooking.</p>
+        <h2>About Me</h2>
+        <img src="images.jpg" alt="Portrait of Charlles">
+        <p>Hello! My name is <strong>Charlles Pereira Costa</strong>. I enjoy travelling, aviation, and cooking.</p>
     </section>
 
     <section id="hobbies">
-      <h2>My Hobbies</h2>
-      <ul>
-        <li>Aviation</li>
-        <li>Travelling</li>
-        <li>Cooking</li>
-      </ul>
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Aviation</li>
+            <li>Travelling</li>
+            <li>Cooking</li>
+        </ul>
     </section>
 
     <section id="courses">
-      <h2>My Courses</h2>
-      <table>
-        <tr>
-          <th>Course</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td>HTML</td>
-          <td>In Progress</td>
-        </tr>
-        <tr>
-          <td>Web Dev</td>
-          <td>In Progress</td>
-        </tr>
-      </table>
+        <h2>My Courses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>Web Dev</td>
+                    <td>In Progress</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
 
-        <input type="submit" value="Send">
-      </form>
+            <input type="submit" value="Send">
+        </form>
     </section>
 
     <section id="workshop3" class="workshop-3">
-      <h2>Workshop 3: Advanced CSS Techniques</h2>
+        <h2>Workshop 3: Advanced CSS Techniques</h2>
 
-      <h3>CSS Transitions</h3>
-      <p>Hover over the button:</p>
-      <button class="transition-button">Hover Me</button>
+        <h3>CSS Transitions</h3>
+        <p>Hover over the button:</p>
+        <button type="button" class="transition-button">Hover Me</button>
 
-      <h3>CSS Animations</h3>
-      <div class="animation-box"></div>
+        <h3>CSS Animations</h3>
+        <div class="animation-box"></div>
 
-      <h3>Pseudo-classes</h3>
-      <ul class="pseudo-list">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-      </ul>
+        <h3>Pseudo-classes</h3>
+        <ul class="pseudo-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
 
-      <h3>CSS Filters</h3>
-      <img src="images.jpg" alt="Filtered example" class="filter-image">
+        <h3>CSS Filters</h3>
+        <img src="images.jpg" alt="Filtered example" class="filter-image">
 
-      <h3>Pseudo-elements</h3>
-      <p class="quote">This is a sample quote.</p>
+        <h3>Pseudo-elements</h3>
+        <p class="quote">This is a sample quote.</p>
     </section>
 
     <section id="workshop4" class="workshop-4">
-      <h2>Workshop 4: Layouts</h2>
+        <h2>Workshop 4: Layouts</h2>
 
-      <h3>Grid Layout</h3>
-      <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-      </div>
+        <h3>Grid Layout</h3>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
 
-      <h3>Flexbox Layout</h3>
-      <div class="flex-container">
-        <div class="box">Box 1</div>
-        <div class="box">Box 2</div>
-        <div class="box">Box 3</div>
-      </div>
+        <h3>Flexbox Layout</h3>
+        <div class="flex-container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
 
-      <h3>Media Queries</h3>
-      <div class="responsive-box">Resize the window to see the background color change.</div>
+        <h3>Media Queries</h3>
+        <div class="responsive-box">Resize the window to see the background color change.</div>
     </section>
 
     <section id="workshop5" class="workshop-5">
-      <h2>Workshop 5: Responsive Design</h2>
+        <h2>Workshop 5: Responsive Design</h2>
 
-      <h3>Task 1: Responsive Layout</h3>
-      <div class="responsive-container">
-        <div class="column">Column 1 content</div>
-        <div class="column">Column 2 content</div>
-      </div>
+        <h3>Task 1: Responsive Layout</h3>
+        <p>Two columns on larger screens, one column on screens 600&nbsp;px and below.</p>
+        <div class="responsive-container">
+            <div class="column">Column 1 content</div>
+            <div class="column">Column 2 content</div>
+        </div>
 
-      <h3>Task 2: Responsive Image</h3>
-      <img src="images.jpg" alt="Responsive Image" class="responsive-image">
+        <h3>Task 2: Responsive Image</h3>
+        <p>Resizes automatically to fit its container.</p>
+        <img src="images.jpg" alt="Responsive Image" class="responsive-image">
 
-      <h3>Task 3: Media Query Box</h3>
-      <div class="media-query-box">
-        Resize the window to see the effect
-      </div>
+        <h3>Task 3: Media Query Box</h3>
+        <div class="media-query-box">
+            Resize the window to see the effect (light&nbsp;blue ≥ 601&nbsp;px, light&nbsp;coral ≤ 600&nbsp;px)
+        </div>
 
-      <h3>Task 4: Responsive Navigation Bar</h3>
-      <nav class="responsive-nav">
-        <button class="menu-toggle">☰ Menu</button>
-        <ul class="nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+        <h3>Task 4: Responsive Navigation Bar</h3>
+        <p>Below 600&nbsp;px the link list is hidden and the menu button appears.</p>
+        <nav class="responsive-nav" aria-label="Workshop 5 demo navigation">
+            <button type="button" class="menu-toggle">☰ Menu</button>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h3>Task 5: Validate Your Responsive Design</h3>
+        <p>Open your browser's developer tools (F12 or right-click &rarr; Inspect) and switch to the
+            <em>Responsive Design Mode</em> / <em>Device Toolbar</em>. Try widths of 320&nbsp;px,
+            600&nbsp;px, 768&nbsp;px, and 1200&nbsp;px to confirm the layout, image, media-query box,
+            and navigation bar all adjust correctly.</p>
     </section>
-  </main>
+</main>
 
-  <footer>
-    <p>&copy; Charlles Pereira Costa Workshop 5 Laurea AMK 2026 </p>
-  </footer>
+<footer>
+    <p>&copy; Charlles Pereira Costa &mdash; Workshop 5 Laurea AMK Spring 2026.</p>
+</footer>
+
 </body>
 </html>

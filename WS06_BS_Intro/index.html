@@ -3,35 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Workshop 6 - Practice Tasks</title>
+    <title>Bootstrap Workshop 6 — Charlles Pereira Costa</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap 5.3 CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Custom styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Task 1: Responsive Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Brand</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="#home">Workshop&nbsp;6</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -65,12 +58,12 @@
         <!-- Task 3: Bootstrap Buttons -->
         <section class="mb-5">
             <h2 class="mb-3">Task 3: Bootstrap Buttons</h2>
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-secondary">Secondary</button>
-            <button class="btn btn-success">Success</button>
-            <button class="btn btn-danger">Danger</button>
-            <button class="btn btn-warning">Warning</button>
-            <button class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
         </section>
 
         <!-- Task 4: Bootstrap Card -->
@@ -78,13 +71,12 @@
             <h2 class="mb-3">Task 4: Bootstrap Card</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card" style="width: 100%;">
-                        <img src="https://via.placeholder.com/400x200/0d6efd/ffffff?text=Card+Image" 
-                             class="card-img-top" alt="Placeholder image for card">
+                    <div class="card">
+                        <img src="image.jpg" class="card-img-top" alt="Portrait of Charlles">
                         <div class="card-body">
-                            <h5 class="card-title">Card Title</h5>
+                            <h3 class="card-title h5">Card Title</h3>
                             <p class="card-text">This is a simple card example using Bootstrap. Cards are great for displaying content in a clean, organized way.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="#about" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -144,13 +136,15 @@
 
     <!-- Footer -->
     <footer class="bg-light text-center py-4 mt-5">
-        <p class="mb-0">Bootstrap Workshop 6 - Charlles Pereira Costa &copy; 2026</p>
+        <div class="container">
+            <p class="mb-0 text-muted">&copy;  Charlles Pereira Costa &middot; Bootstrap Workshop 6 &middot; Laurea AMK Spring 2026</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap JavaScript -->
+    <!-- Bootstrap 5.3 JS bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom JavaScript -->
+    <!-- Custom JS -->
     <script src="script.js"></script>
 
 </body>

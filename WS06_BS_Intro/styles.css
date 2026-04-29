@@ -88,6 +88,13 @@ section h2 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Card image: cap height so portraits don't dominate the card */
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
 /* Footer styling */
 footer {
     border-top: 1px solid #dee2e6;
