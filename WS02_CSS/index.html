@@ -1,114 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlles Pereira Costa - My First HTML Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Charlles Webpage Project - Bootstrap version" />
+  <meta name="author" content="Charlles Pereira Costa" />
+
+  <title>Home | Charlles Webpage Project</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .hero-section {
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: white;
+      padding: 5rem 0;
+    }
+
+    .hero-img {
+      max-width: 260px;
+      border-radius: 50%;
+      border: 5px solid rgba(255,255,255,0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .glass-card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+    }
+
+    .video-section {
+      background: #111827;
+    }
+
+    footer {
+      background: #0f172a;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
     <div class="container">
-        <h1>Welcome to My Page</h1>
-        
-        <img src="images.jpg" alt="Charlles Pereira Costa - Professional portrait">
-        
-        <section class="about-section">
-            <h2>About Me</h2>
-            <p>Hello! My name is <strong>Charlles Pereira Costa</strong>. I am passionate about exploring new horizons and experiencing different cultures and cuisines around the world. I enjoy spending my time on activities that fuel my passion for adventure, travel, and creativity in the kitchen.</p>
-        </section>
 
-        <section>
-            <h2>My Hobbies</h2>
-            
-            <h3>Things I Love</h3>
-            <ul>
-                <li>Aviation - Exploring aircraft and aviation technology</li>
-                <li>Travelling - Discovering new places and cultures</li>
-                <li>Cooking - Creating delicious meals and experimenting with recipes</li>
-            </ul>
-            
-            <h3>My Typical Day Activities</h3>
-            <ol>
-                <li>Start the day with a well-planned breakfast</li>
-                <li>Engage in learning and development activities</li>
-                <li>Pursue hobbies and personal interests</li>
-                <li>Reflect and plan for tomorrow</li>
-            </ol>
-        </section>
+      <a class="navbar-brand fw-bold" href="index.html">
+        Charlles
+      </a>
 
-        <section>
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="https://www.laurea.fi" target="_blank" rel="noopener">Visit Laurea University</a></li>
-                <li><a href="https://www.airliners.net" target="_blank" rel="noopener">Learn About Aviation Industry</a></li>
-                <li><a href="https://maps.google.com" target="_blank" rel="noopener">Explore Places on Google Maps</a></li>
-            </ul>
-        </section>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <section>
-            <h2>My Academic Courses</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Course Name</th>
-                        <th>Status</th>
-                        <th>Interest Level</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Introduction to HTML</td>
-                        <td>In Progress</td>
-                        <td>High</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development Fundamentals</td>
-                        <td>In Progress</td>
-                        <td>High</td>
-                    </tr>
-                    <tr>
-                        <td>Professional Communication</td>
-                        <td>Completed</td>
-                        <td>Medium</td>
-                    </tr>
-                    <tr>
-                        <td>Digital Literacy</td>
-                        <td>In Progress</td>
-                        <td>High</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+      <div class="collapse navbar-collapse" id="navbarNav">
 
-        <section>
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
+        <ul class="navbar-nav ms-auto">
 
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              Home
+            </a>
+          </li>
 
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-                </div>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
 
-                <div>
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
-        </section>
+          <li class="nav-item">
+            <a class="nav-link" href="interests.html">
+              Interests
+            </a>
+          </li>
 
-        <hr>
-        <footer>
-           <p>Charlles Pereira Costa | Laurea AMK Spring 2026 <br>
-           Created as part of HTML Workshop 1</p>
-        </footer>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
     </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section">
+
+    <div class="container">
+
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-7">
+
+          <span class="badge bg-primary mb-3 p-2">
+            Bootstrap Workshop 6
+          </span>
+
+          <h1 class="display-4 fw-bold mb-4">
+            IT, Cybersecurity, Space & Technology
+          </h1>
+
+          <p class="lead mb-4">
+            Welcome to my personal Bootstrap project website.
+            This page combines responsive layouts, modern UI,
+            Bootstrap components and my personal interests.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+
+            <a href="about.html" class="btn btn-primary btn-lg">
+              About Me
+            </a>
+
+            <a href="interests.html" class="btn btn-outline-light btn-lg">
+              My Interests
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-5 text-center">
+
+          <img
+            src="me.jpg"
+            alt="Charlles Pereira Costa"
+            class="img-fluid hero-img"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- INTEREST CARDS -->
+  <section class="py-5">
+
+    <div class="container">
+
+      <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+          Main Interests
+        </h2>
+
+        <p class="text-muted">
+          Responsive Bootstrap card layout
+        </p>
+
+      </div>
+
+      <div class="row g-4">
+
+        <!-- SPACE -->
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow border-0">
+
+            <img
+              src="cosmos.jpg"
+              class="card-img-top"
+              alt="Space"
+            />
+
+            <div class="card-body">
+
+              <h5 class="card-title">
+                Space Exploration
+              </h5>
+
+              <p class="card-text">
+                I enjoy learning about rockets,
+                astronomy and future space missions.
+              </p>
+
+              <a href="interests.html" class="btn btn-primary">
+                Explore
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- GADGETS -->
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow border-0">
+
+            <img
+              src="gadgets.jpg"
+              class="card-img-top"
+              alt="Technology"
+            />
+
+            <div class="card-body">
+
+              <h5 class="card-title">
+                Gadgets & Tech
+              </h5>
+
+              <p class="card-text">
+                I like practical technology,
+                useful devices and modern engineering.
+              </p>
+
+              <a href="interests.html" class="btn btn-dark">
+                Discover
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- TRAVEL -->
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow border-0">
+
+            <img
+              src="travel.jpg"
+              class="card-img-top"
+              alt="Travel"
+            />
+
+            <div class="card-body">
+
+              <h5 class="card-title">
+                Travel
+              </h5>
+
+              <p class="card-text">
+                Travel gives perspective,
+                inspiration and new experiences.
+              </p>
+
+              <a href="interests.html" class="btn btn-success">
+                View More
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section class="video-section py-5 text-light">
+
+    <div class="container">
+
+      <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+          Featured Video
+        </h2>
+
+        <p class="text-light-emphasis">
+          A video I wanted to include in this project.
+        </p>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-10">
+
+          <div class="glass-card p-3 shadow-lg">
+
+            <div class="ratio ratio-16x9">
+
+              <iframe
+                src="https://www.youtube.com/embed/tLgbqxGnzpg"
+                title="YouTube video"
+                allowfullscreen>
+              </iframe>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-light py-4">
+
+    <div class="container text-center">
+
+      <h5 class="fw-bold">
+        Charlles Webpage Project
+      </h5>
+
+      <p class="text-secondary">
+        Built with Bootstrap 5.3
+      </p>
+
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+        <a href="index.html" class="text-decoration-none text-light">
+          Home
+        </a>
+
+        <a href="about.html" class="text-decoration-none text-light">
+          About
+        </a>
+
+        <a href="interests.html" class="text-decoration-none text-light">
+          Interests
+        </a>
+
+        <a href="contact.html" class="text-decoration-none text-light">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
 </body>
 </html>
