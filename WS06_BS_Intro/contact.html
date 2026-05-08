@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Charlles Pereira Costa" />
+  <title>Contact | Charlles Webpage Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { background-color: #f8f9fa; }
+    .hero-section { background: linear-gradient(to right, #f8f9fa, #e9ecef); padding: 4rem 0 3rem; }
+    footer { background-color: #212529; color: white; padding: 2rem 0; }
+    footer a { color: #f8f9fa; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">Charlles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="interests.html">Interests</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="container text-center">
+      <p class="text-uppercase text-muted fw-semibold mb-2">Open inbox</p>
+      <h1 class="display-5 fw-bold">Say hello. I read every message.</h1>
+      <p class="lead mt-3">Whether it's a question about IT, a kitchen recommendation, or a project idea, pick the channel that suits you.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-md-4 col-12">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Email</h5>
+              <p class="text-muted">Primary</p>
+              <p class="card-text"><a href="mailto:charlles.pereiracosta@gmail.com">charlles.pereiracosta@gmail.com</a></p>
+              <a href="mailto:charlles.pereiracosta@gmail.com" class="btn btn-primary">Send Email</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">LinkedIn</h5>
+              <p class="text-muted">Professional</p>
+              <p class="card-text"><a href="https://www.linkedin.com/in/charlles-pereira-costa-834232114" target="_blank" rel="noopener noreferrer">linkedin.com/in/charlles-pereira-costa</a></p>
+              <a href="https://www.linkedin.com/in/charlles-pereira-costa-834232114" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Open LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">DeviantArt</h5>
+              <p class="text-muted">Creative</p>
+              <p class="card-text"><a href="https://www.deviantart.com/flycharlles" target="_blank" rel="noopener noreferrer">deviantart.com/flycharlles</a></p>
+              <a href="https://www.deviantart.com/flycharlles" target="_blank" rel="noopener noreferrer" class="btn btn-success">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="mb-3">A small form, in case email feels heavy.</h2>
+              <p class="text-muted">This is a static demo form for the course project. Submissions are not sent anywhere yet.</p>
+
+              <div class="alert alert-warning" role="alert">
+                This is a demo contact form for Workshop 6.
+              </div>
+
+              <form action="#" method="post" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="e.g. Ada Lovelace">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="you@somewhere.com">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="What's on your mind?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Note</button>
+                <button type="reset" class="btn btn-outline-secondary ms-2">Reset</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <h5 class="mb-3">Charlles Webpage Project</h5>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Charlles Pereira Costa" />
+  <title>About | Charlles Webpage Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { background-color: #f8f9fa; }
+    .hero-section { background: linear-gradient(to right, #f8f9fa, #e9ecef); padding: 4rem 0 3rem; }
+    .profile-img { width: 100%; max-width: 320px; border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
+    footer { background-color: #212529; color: white; padding: 2rem 0; }
+    footer a { color: #f8f9fa; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">Charlles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="interests.html">Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <p class="text-uppercase text-muted fw-semibold mb-2">Chapter one</p>
+          <h1 class="display-5 fw-bold">A short biography, written by the subject.</h1>
+          <p class="lead mt-3">I work in IT, I'm pulled toward cybersecurity and cloud, and I spend my off-hours reading about rockets or rearranging a mise en place.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img src="me.jpg" alt="Portrait of Charlles Pereira Costa" class="profile-img img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Quick facts</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Based in:</strong> The cloud, Brazil/Finland</li>
+                <li class="list-group-item"><strong>Working on:</strong> Cybersecurity & Azure</li>
+                <li class="list-group-item"><strong>Toolbelt:</strong> ServiceNow, Linux, CLI</li>
+                <li class="list-group-item"><strong>Currently reading:</strong> Anything on zero-trust</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="alert alert-info" role="alert">
+            Good IT is invisible. The work shows up as everyone else's quiet, productive day.
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <h2 class="mb-3">Who I am</h2>
+          <p>I'm an IT-focused professional whose curiosity refuses to stay inside a single ticket queue. Most of my days are spent close to networks, endpoints and the sort of small, careful problem-solving that keeps organisations actually able to work.</p>
+          <p>The rest of my hours go into the slower, deeper end of the field — cybersecurity, cloud architecture, and the systems that connect them.</p>
+          <p>I came into this work the long way around: a lot of self-teaching, a lot of breaking things in lab environments, and a healthy respect for people who write good documentation. I still believe the most valuable skill in IT is reading carefully before clicking quickly.</p>
+
+          <h2 class="mt-5 mb-3">What I work on</h2>
+          <p>The day-to-day looks like a mix of operations and design — supporting users, hardening systems, automating the parts that beg to be automated, and learning a new corner of Microsoft Azure each week. I prefer fixes that hold up at 3 a.m. over fixes that win demos.</p>
+
+          <h2 class="mt-5 mb-3">Skills, currently sharpening</h2>
+          <div class="row g-3">
+            <div class="col-md-6"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">IT support & troubleshooting</h5><p class="card-text">Triage, root-cause analysis, end-to-end resolution.</p></div></div></div>
+            <div class="col-md-6"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Cloud — Microsoft Azure</h5><p class="card-text">Identity, basic infra, networking primitives.</p></div></div></div>
+            <div class="col-md-6"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">ServiceNow & Linux server administration</h5><p class="card-text">Workflow design, incident hygiene, clean handoffs.</p></div></div></div>
+            <div class="col-md-6"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Networking fundamentals</h5><p class="card-text">OSI layers, fiber optics, switches, the hard stuff at the edges.</p></div></div></div>
+            <div class="col-md-6"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Cybersecurity basics</h5><p class="card-text">Threat models, hardening, the human side of security.</p></div></div></div>
+            <div class="col-md-6"><div class="card h-100 shadow-sm"><div class="card-body"><h5 class="card-title">Documentation</h5><p class="card-text">Writing the runbook the next person will actually use.</p></div></div></div>
+          </div>
+
+          <h2 class="mt-5 mb-3">Where I'm heading</h2>
+          <p>The next chapter is squarely in cybersecurity and cloud infrastructure — two fields that keep getting more interesting the deeper you go. I want to spend the next year getting comfortable with identity, network defence, and the practical realities of running secure systems at scale.</p>
+          <a href="contact.html" class="btn btn-primary mt-3">Say Hello</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <h5 class="mb-3">Charlles Webpage Project</h5>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
